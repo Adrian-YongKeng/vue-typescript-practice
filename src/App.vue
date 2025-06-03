@@ -8,6 +8,7 @@
     <!-- <p>{{ jobs[0].location }}</p> -->
 
     <header>
+      <div class="title"><h1>Hyrule Jobs</h1></div>
       <div class="order">
         <button @click="handleClick('title')">Order by title</button>
         <button @click="handleClick('salary')">Order by salary</button>
@@ -50,13 +51,18 @@ export default defineComponent({
       },
       {
         title: "quarry man",
-        location: "Hulu Selangor",
+        location: "Sepang",
         salary: 400000,
         id: "2",
       },
-      { title: "player", location: "Hilir Selangor", salary: 350000, id: "3" },
+      { title: "player", location: "Ampang", salary: 350000, id: "3" },
       { title: "fisherman", location: "Port Klang", salary: 630000, id: "4" },
-      { title: "Body Guard", location: "Kuala Lumpur", salary: 50000, id: "5" },
+      {
+        title: "Body Guard",
+        location: "Kuala Lumpur",
+        salary: 500000,
+        id: "5",
+      },
     ]);
 
     const order = ref<OrderTerm>("title");
